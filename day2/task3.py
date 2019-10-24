@@ -17,7 +17,7 @@ for l in range(squares):
 
 holst = (input("Input width and hight of canvas (like 5 6): ")).split()
 str2int(holst)
-S_holst = holst[0]*holst[1]
+S_holst = holst[0] * holst[1]
 s_squares = []
 for c in range(squares):
     x1 = sq[c][0]
@@ -28,4 +28,4 @@ for c in range(squares):
         for j in range(y1, y2):
             if [i + 1, j + 1] not in s_squares:
                 s_squares.append([i + 1, j + 1])
-print('Free part is {0}'.format(S_holst-len(s_squares)))
+print('Free part is {0}'.format(S_holst - len(s_squares)))
