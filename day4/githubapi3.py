@@ -13,12 +13,12 @@ args = parser.parse_args()
 
 init_password = getpass()
 
-n = 5 if args.numpr == None else int(args.numpr)
+n = 3 if args.numpr is None else int(args.numpr)
 url = 'https://api.github.com/repos/{0}/{1}/pulls'.format(args.owner, args.repos)
 r = requests.get(url, auth=(args.login, init_password))
 jsondata = r.json()
 # get the last n PR
-if jsondata is None:
+if jsondata == []:
     print("There is no data about PULL REQUEST!")
 else:
     getthelast3PR = jsondata[:n]
