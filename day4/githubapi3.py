@@ -23,8 +23,8 @@ if jsondata == []:
 else:
     getthelast3PR = jsondata[:n]
     for i in range(n):
-        print(getthelast3PR[i]['number'])
-        print(getthelast3PR[i]['title'])
-        print(getthelast3PR[i]['user']['login'])
-        print(getthelast3PR[i]['created_at'])
-        print("========================")
+        print("Number of PR: {0}".format(getthelast3PR[i]['number']))
+        print("Title of PR: {0}".format(getthelast3PR[i]['title']))
+        print("Login PR's user: {0}".format(getthelast3PR[i]['user']['login']))
+        print("PR was created: {0}".format(getthelast3PR[i]['created_at']))
+        print("===================================")
