@@ -18,7 +18,7 @@ url = 'https://api.github.com/repos/{0}/{1}/pulls'.format(args.owner, args.repos
 r = requests.get(url, auth=(args.login, init_password))
 jsondata = r.json()
 # get the last n PR
-if jsondata == []:
+if jsondata is None:
     print("There is no data about PULL REQUEST!")
 else:
     getthelast3PR = jsondata[:n]
