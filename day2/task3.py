@@ -6,6 +6,7 @@ def str2int(mylist):
     for r in range(len(mylist)):
         mylist[r] = int(mylist[r])
 
+
 holst = (input("Input width and hight of canvas (like 5 6): ")).split()
 # input squares's coordinates
 sq = []
