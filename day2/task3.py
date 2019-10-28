@@ -3,10 +3,10 @@
 
 # string data in list convert to int
 def str2int(mylist):
-    for r in range(0, len(mylist)):
+    for r in range(len(mylist)):
         mylist[r] = int(mylist[r])
 
-
+holst = (input("Input width and hight of canvas (like 5 6): ")).split()
 # input squares's coordinates
 sq = []
 squares = int(input("Input number of squares "))
@@ -15,7 +15,6 @@ for l in range(squares):
     str2int(coord)
     sq.append(coord)
 
-holst = (input("Input width and hight of canvas (like 5 6): ")).split()
 str2int(holst)
 S_holst = holst[0] * holst[1]
 s_squares = []
