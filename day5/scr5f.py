@@ -47,4 +47,3 @@ with open('result.json', 'w') as fp:
 # create yaml file
 with open('result.yml', 'w') as outfile:
     yaml.dump(f_dict, outfile, default_flow_style=False)
-
