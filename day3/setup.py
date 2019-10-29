@@ -3,7 +3,7 @@ setup(
     name="snapshot",
     packages=find_packages(),
     include_package_data=True,
-    scripts=[],
+    scripts=['scr/snapshot.py'],
     version="0.1b",
     author="Aliaksandr Dakutovich",
     author_email="Aliaksandr_Dakutovich@epam.com",
