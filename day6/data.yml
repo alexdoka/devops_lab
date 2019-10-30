@@ -1,0 +1,13 @@
+#servername: www.ya.ru
+#documentroot: /www/domain
+serveradmin: www-admin@foo.example.com
+directorypath: /usr/local/httpd/htdocs
+apache_vhosts:
+- servername: www.first.site
+  documentroot: /www1/
+  directorypath: /usr/local/httpd/htdocs/www1
+  port: 81
+- servername: www.second.site
+  documentroot: /www2/
+  directorypath: /usr/local/httpd/htdocs/www2
+  port: 82
